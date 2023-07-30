@@ -1,0 +1,67 @@
+module.exports = {
+  mode: "jit",
+  content: [
+    "./src/**/**/*.{js,ts,jsx,tsx,html,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx,html,mdx}",
+  ],
+  darkMode: "class",
+  theme: {
+    screens: { md: { max: "1050px" }, sm: { max: "550px" } },
+    extend: {
+      colors: {
+        deep_purple: { "900_33_01": "#1a1abc33", "900_33": "#1b1bbc33" },
+        blue_gray: { 100: "#d4d4d4", 700: "#525252", "100_01": "#d9d9d9" },
+        gray: {
+          100: "#f5f5f5",
+          300: "#e5e5e5",
+          500: "#a3a3a3",
+          600: "#727272",
+          700: "#5f5f5f",
+          800: "#3f3f3f",
+          900: "#262626",
+          "900_99": "#17171799",
+          "700_33": "#5f5f6233",
+          "900_02": "#141414",
+          "900_03": "#171717",
+          "900_04": "#151515",
+          "900_01": "#033009",
+          "900_7f": "#1717177f",
+        },
+        light_blue: {
+          600: "#0ea5e9",
+          A700_a2: "#009af1a2",
+          A700: "#009af1",
+          A700_66: "#009af166",
+        },
+        cyan: { A200_00: "#22f7dc00" },
+        black: {
+          900: "#000000",
+          "900_1c": "#0000001c",
+          "900_01": "#0a0a0a",
+          "900_02": "#0b0b0b",
+          "900_19": "#00000019",
+        },
+        white: {
+          A700_33: "#ffffff33",
+          A700_38: "#ffffff38",
+          A700_00: "#ffffff00",
+          A700: "#ffffff",
+        },
+        green: { "400_00": "#5df96000" },
+      },
+      fontFamily: { inter: "Inter" },
+      backgroundImage: {
+        gradient: "linear-gradient(226deg ,#1b1bbc33,#ffffff33)",
+        gradient1: "linear-gradient(224deg ,#1a1abc33,#ffffff33)",
+        gradient2: "linear-gradient(225deg ,#1a1abc33,#ffffff33)",
+        gradient3: "linear-gradient(222deg ,#1b1bbc33,#ffffff33)",
+        gradient4: "linear-gradient(180deg ,#171717,#17171799,#1717177f)",
+      },
+      boxShadow: {
+        bs1: "0px 1px  2px -1px #00000019",
+        bs: "0px 7px  24px 2px #0000001c",
+      },
+    },
+  },
+  plugins: [require("@tailwindcss/forms")],
+};
